@@ -1,0 +1,122 @@
+.appsumo-scene {
+  .appsumo-login {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    top: 60px;
+
+    * {
+      color: black;
+    }
+
+    .plan-features {
+      .item {
+        display: flex;
+        margin-bottom: 10px;
+
+        p {
+          font-size: 18px;
+          color: #979797;
+        }
+
+        i {
+          margin-right: 15px;
+          color: #00ad21;
+          font-size: 18px;
+          position: relative;
+          top: 5px;
+        }
+      }
+    }
+
+    .left-panel {
+      width: 75%;
+      background-color: white;
+      padding: 60px 30px;
+
+      .scene-title {
+        font-weight: 550;
+      }
+
+      .accordion {
+        .item {
+          .title {
+            font-size: 18px;
+
+            .angle {
+              margin-bottom: 0;
+              font-size: 18px;
+              color: #0275d8;
+              position: relative;
+              top: 3px;
+            }
+          }
+        }
+      }
+    }
+    .right-panel {
+      width: 25%;
+      padding-left: 30px;
+      background: transparent;
+      position: fixed;
+      right: 0;
+      top: 150px;
+      display: flex;
+      flex-direction: column;
+      
+      .tier-card {
+        background: transparent;
+        box-shadow: none;
+        background-color: white;
+        margin-bottom: 60px;
+        
+        .price-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          
+          .description {
+            font-size: 18px;
+            line-height: 18px;
+          }
+          
+          .price {
+            font-size: 24px;
+          }
+        }
+
+        .tier-name {
+          text-align: center;
+          padding: 30px;
+          .header {
+            font-size: 24px;
+            font-weight: bold;
+          }
+        }
+      }
+  
+      .btn-login {
+        width: 254px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        background-color: #4267B2;
+        font-family: Helvetica, Arial, sans-serif;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        img {
+          width: 24px;
+          margin: 8px 20px 8px 8px;
+        }
+      }
+    }
+  }
+}

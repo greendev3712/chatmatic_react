@@ -1,0 +1,444 @@
+.profile-container {
+  width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+
+  .close-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    i {
+      color: black;
+    }
+  }
+  
+  .user-information {
+    padding: 0 15px;
+    display: flex;
+    padding: 40px 150px 0 150px;
+    background-color: #EBF6FA;
+    flex-wrap: wrap;
+
+    .user-avatar {
+      min-width: 250px;
+      max-width: 250px;
+      height: 250px;
+      object-fit: contain;
+      border-radius: 50%;
+      flex: 1;
+    }
+
+    .info-section {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      .section-body {
+        display: flex;
+        flex-wrap: wrap;
+        .user-info {
+          min-width: 300px;
+          padding: 0 15px;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          flex: 1;
+          padding-bottom: 20px;
+          .full-name {
+            font-size: 20px;
+            font-weight: bold;
+          }
+  
+          .user-email {
+            font-size: 15px;
+            color: grey;
+          }
+  
+          .user-description {
+            height: 140px;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        .social-links {
+          min-width: 300px;
+          padding: 12px 15px;
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          padding-bottom: 20px;
+          .link-list {
+            display: flex;
+            align-self: end;
+            list-style-type: none;
+            vertical-align: middle;
+            li {
+              display: inline-block;
+              padding: 0;
+              width: 24px;
+              height: 24px;
+              line-height: 24px;
+              margin-right: 15px;
+  
+              .facebook i{
+                background-color: #1f4188;
+                color: white;
+              }
+              .twitter i{
+                background-color: #00B5F7;
+                color: white;
+              }
+              .linkedin img{
+                width: 100%;
+                height: 100%;
+              }
+              .youtube i{
+                background-color: #D61400;
+                color: white;
+                font-size: 18px;
+              }
+              a.linkedin {
+                background-color: #0063AE !important;
+              }
+            }
+          }
+          .edit-links {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            .user-input {
+              max-width: 220px;
+            }
+          }
+        }
+  
+        .follow-section {
+          width: 100%;
+          height: 45px;
+          padding-left: 30px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          button {
+            background-color: white;
+            border: 0;
+            height: 100%;
+            border: 1px solid #DCEFF6;
+            border-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            cursor: pointer;
+            outline: 0;
+            .number {
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+          .followers {
+            flex: 1;
+          }
+          .following {
+            flex: 1;
+          }
+          .follow-button {
+            flex: 2;
+            background-color: #10A3FF;
+            font-weight: bold;
+            flex-direction: row;
+            vertical-align: middle;
+            justify-content: center;
+            color: white;
+            &:disabled {
+              background-color: #40C3FF;
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .user-statistics {
+    .numerical-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .info-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .info-cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .col {
+          flex: 1;
+          padding: 0 8px;
+          min-width: 250px;
+        }
+        .info-card {
+          display: flex;
+          align-items: center;
+          vertical-align: middle;
+          padding: 14px 12px;
+          justify-content: space-between;
+          height: 80px;
+          border-radius: 6px;
+          box-shadow: 3px 2px 5px #E7E8EF, -1px 0px 1px #E7E8EF;
+          margin-bottom: 20px;
+
+          i {
+            display: flex;
+            align-items: center;
+          }
+
+          .card-icon {
+            font-size: 30px;
+          }
+
+          img.card-icon {
+            width: 30px;
+            height: 30px;
+          }
+
+          .template-created {
+            color: #08B6F5;
+          }
+
+          .review {
+            color: #FD4647;
+          }
+
+          .template-sold {
+            color: #F7FEFB;
+          }
+
+          .card-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .category {
+              font-size: 14px;
+              color: #B6B8C3;
+            }
+            .card-value {
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .statistics-view {
+      display: flex;
+      flex-wrap: wrap;
+      .templates-view {
+        width: 55%;
+        min-width: 400px;
+        padding: 0 15px 0 30px;
+        .template-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          .template-list {
+            display: flex;
+            width: 100%;
+            margin-bottom: 25px;
+            .template-card {
+              width: 50%;
+              margin: 5px;
+              border-radius: 10px;
+              box-shadow: 1px 2px 1px #E7E8EF;
+              overflow: hidden;
+              .icon-col {
+                min-height: 200px !important;
+                max-height: 200px !important;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                background-color: #f5f5f5;
+
+                .graph {
+                  width: 100%;
+                  min-height: 200px;
+                  object-fit: cover;
+                  height: 100%;
+                }
+              }
+              .template-title {
+                font-size: 14px;
+                font-weight: bold;
+                height: 60px;
+                padding: 10px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+      .graph-view {
+        width: 45%;
+        min-width: 400px;
+        padding: 5px 30px 15px 15px;
+
+        .sales-chart {
+          border: 1px solid #f3f3f3;
+          padding: 10px;
+          border-radius: 10px;
+        
+          .total-sales {
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            
+            .money-bag {
+              width: 20px;
+              height: 20px;
+              display: inline;
+            }
+          }
+  
+          #chart-2 {
+            padding-left: 10px;
+            height: 250px !important;
+            canvas {
+              height: 250px !important;
+            }
+          }
+        }
+      }
+    }
+    .badges {
+      padding: 10px;
+    }
+  }
+
+  .icon-btn {
+    background-color: grey;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: block;
+    font-size: 16px;
+    overflow: hidden;
+    i {
+      width: 100%;
+      height: 100%;
+      color: white;
+    }
+  }
+
+  .edit-icon {
+    position: absolute;
+    right: 10px;
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: space-between;
+    margin-bottom: 5px !important;
+    .user-label {
+      align-self: center;
+    }
+
+    .user-input {
+      
+      input {
+        border-radius: 15px !important;
+        height: 30px;
+        width: 100%;
+      }
+    }
+
+    textarea.user-input {
+      border-radius: 10px !important;
+      resize: none;
+    }
+  }
+
+  .save-button {
+    align-self: end;
+    height: 32px;
+    border-radius: 16px !important;
+    line-height: 20px !important;
+    padding: 6px 20px !important;
+    background-color: #10A3FF !important;
+  }
+
+}
+
+@media(max-width: 1200px) {
+  .profile-container{
+    width: 1000px;
+    .user-information {
+      padding: 20px 50px 0 50px;
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  .profile-container{
+    width: 800px;
+    .user-information {
+      padding: 20px 50px 0 50px;
+    }
+    .statistics-view {
+      .templates-view {
+        width: 100% !important;
+      }
+      .graph-view {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  .profile-container{
+    width: 480px;
+    .user-information {
+      padding: 20px 0 0 0;
+    }
+    .statistics-view {
+      .templates-view {
+        width: 100% !important;
+      }
+      .graph-view {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media(max-width: 480px) {
+  .profile-container{
+    width: 320px;
+
+    .user-information {
+      padding: 20px 0 0 0;
+    }
+    .statistics-view {
+      .templates-view {
+        width: 100% !important;
+      }
+      .graph-view {
+        width: 100% !important;
+      }
+    }
+  }
+}

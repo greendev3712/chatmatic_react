@@ -1,0 +1,57 @@
+.general-container {
+  flex: 1;
+
+  .page-header {
+    padding: 24px 160px 0;
+    border-bottom: 1px solid #E6E7EB;
+
+    .page-title {
+      margin-bottom: 29px;
+
+      span {
+        margin-left: 10px;
+        font-size: 14px;
+        color: #b1b9cd;
+      }
+    }
+
+    .input-group {
+      border: 1px solid #E6E7EB;
+      border-radius: 10px;
+
+      span, input {
+        border: 0;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .page-content {
+    padding: 30px 160px;
+    flex: 1;
+
+    .user-list {
+      flex: 1;
+      max-height: 400px;
+      overflow: auto;
+    }
+  }
+
+  .page-footer {
+    padding: 30px 160px;
+    border-top: 1px solid #E6E7EB;
+
+    .btn-refresh {
+      border-radius: 8px;
+      border: 1px solid #274BF0;
+      width: 207px;
+      height: 40px;
+    }
+
+    .btn-disable-bot {
+      font-size: 14px;
+      color: #5F5F61;
+      text-decoration: underline;
+    }
+  }
+}

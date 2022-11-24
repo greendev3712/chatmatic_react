@@ -1,0 +1,242 @@
+.billing-container {
+  flex: 1;
+
+  .billing-header {
+    padding: 24px 160px 29px;
+    border-bottom: 1px solid #E6E7EB;
+
+    span {
+      margin-left: 10px;
+      font-size: 14px;
+      color: #b1b9cd;
+    }
+  }
+
+  .billing-content {
+    padding: 30px 160px;
+    flex: 1;
+    overflow: auto;
+
+    .btn-pencil {
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+
+    .enterprise-account {
+      min-height: 55px;
+      border-bottom: 1px solid #E6E7EB;
+      margin-bottom: 30px;
+
+      h6 {
+        color: #30323b;
+        margin-bottom: .25rem !important;
+      }
+
+      span {
+        font-size: 12px;
+        color: #b1b9cd;
+        margin-bottom: 3px;
+      }
+
+      button {
+        text-decoration: underline;
+        text-align: left;
+        font-size: 14px;
+      }
+    }
+
+    .billing-email {
+      min-height: 55px;
+      border-bottom: 1px solid #E6E7EB;
+      margin-bottom: 19px;
+
+      h6 {
+        color: #30323b;
+        margin-bottom: .25rem !important;
+      }
+
+      span {
+        font-size: 12px;
+        color: #30323b;
+      }
+
+      img {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+    }
+
+    .payment-info {
+      border-radius: 10px;
+      background-color: #f5f6fa;
+      min-height: 164px;
+
+      .payment-info-content {
+        flex: 1;
+
+        h6 {
+          color: #30323b;
+        }
+
+        span {
+          font-size: 12px;
+          color: #5f5f61;
+        }
+      }
+
+      .payment-info-footer {
+        height: 56px;
+        border-top: 1px solid #E6E7EB;
+
+        button {
+          font-size: 14px;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .billing-footer {
+    min-height: 100px;
+    border-top: 1px solid #E6E7EB;
+
+    button {
+      font-size: 14px;
+      text-decoration: underline;
+    }
+  }
+}
+.pt-30{
+  margin-top: 30px !important;
+}
+.payment-level-container {
+  min-height: 409px;
+  box-shadow: 0 2px 20px 0 rgba(48, 50, 59, 0.15);
+
+  & > div {
+    width: 840px;
+
+    & > p {
+      // font-size: 1.25rem;
+      // color: #30323b;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #171717;
+      // color: #274BF0;
+      line-height: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 1.25rem;
+    }
+
+    .card-container {
+      min-height: 175px;
+
+      .card-content {
+        // border: 1px solid #30323b;
+        border-radius: 10px;
+        padding: 30px;
+        width: 350px;
+        min-height: 175px;
+        margin: 1rem;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.10);
+
+        &:hover {
+          border-color: #6f65fa;
+          box-shadow: 0 2px 20px 0 rgba(48, 50, 59, 0.15);
+
+          .btn {
+            background-color: #274BF0;
+            color: white;
+            border-width: 0 !important;
+          }
+        }
+
+        .membership-info {
+          span {
+            &:first-child {
+              font-size: 1.25rem;
+              color: #30323b;
+              letter-spacing: 1.25px;
+              line-height: 1.5rem;
+            }
+
+            &:last-child {
+              font-size: 14px;
+              color: #274BF0;
+              letter-spacing: 1px;
+            }
+          }
+        }
+
+        .subscribers-count {
+          font-size: 1rem;
+          color: #919294;
+          line-height: 18px;
+          margin-bottom: 1.25rem;
+          span{
+            display: block;
+            color: #000;
+            padding-top: 10px;
+          }
+        }
+        p.subscribers-count {
+          margin-bottom: 0rem;
+        }
+
+        .btn {
+          width: 220px;
+          height: 40px;
+          border-radius: .5rem;
+
+          &.btn-link {
+            // border: 1px solid #30323b;
+            border: 1px solid #274BF0;
+            box-shadow: 0px 0px 5px rgba(39, 75, 240, 0.11);
+          }
+        }
+        .buy-button{
+          margin-top: 15px;
+        }
+
+      }
+    }
+  }
+
+  p.pt-30.title-heading {
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0.1);
+    padding-top: 55px;
+  }
+}
+
+.title-heading {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.form-content {
+  padding: 30px;
+  box-shadow: 0 2px 20px 0 rgba(48, 50, 59, .15) !important;
+  border-radius: 10px !important;
+  min-width: 700px !important;
+
+  input {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px 8px;
+    color: #30323b;
+    border-radius: 8px;
+    border: 1px solid #B1B9CD;
+
+    &:focus, &:hover {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  label {
+    margin-bottom: 0 !important;
+    margin-top: 1rem;
+    margin-left: 8px;
+  }
+}

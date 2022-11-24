@@ -1,0 +1,252 @@
+.carousel-container {
+  width: 266px;
+  min-height: 255px;
+  border-radius: 18px;
+  margin-top: 26px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .add-carousel-icon {
+    // right: -60px;
+    // top: 35px;
+    // border: none;
+    // width: 54px;
+    // color: #274BF0;
+    right: 0;
+    top: 0;
+    // height: calc(100% - 35px);
+    background-color: transparent;
+    border: 1px solid;
+    width: 100%;
+    padding: 7px;
+    color: #274BF0;
+    position: relative !important;
+    border: 1px solid #c0c0c0;
+    border-top: none;
+
+    &:hover {
+      color: #274BF0;
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none !important;
+    }
+  }
+
+  .image-actions{
+    border:1px solid #c0c0c0;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    margin: 0px !important;
+    border-bottom: none;
+   }
+  .carousel-images {
+    > div {
+      width: 100% !important;
+    }
+
+    .changeView {
+      position: absolute;
+      left: 35px;
+      top: 10px;
+      z-index: 9;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 58px !important;
+      border-radius: 12px;
+
+      button.button {
+        background-color: transparent;
+        padding: 7px 4px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+          margin: 0px !important;
+          color: #a7a7a7;
+          line-height: 14px;
+        }
+        &:hover{
+          i{
+            line-height: 16px;
+            color: #242424;
+          }
+        }
+      } 
+    }
+
+    &.landscape{
+      .changeView{
+        button.landscape{
+          i {
+            color: #000;
+          }
+        }
+      }
+    }
+
+    &.portrait{
+      .changeView{
+        button.portrait{
+          i {
+            color: #000;
+          }
+        }
+      }
+    }
+
+    .delete-carousel-icon {
+      top: 8px;
+      color: #b1b9cc;
+      border: 1px solid #c0c0c0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      left: 8px;
+      font-size: 11px;
+      width: 20px !important;
+
+      &:hover {
+        color: #f02727;
+        border: 1px solid #f02727;
+      }
+    }
+
+    .backward-carousel-icon {
+      bottom: 54px;
+      color: #d9d9d9;
+      border-top: 1px solid #B1B9CD;
+      border-right: 1px solid #B1B9CD;
+      width: 25px;
+      height: 25px;
+      border-radius: 0 10px 0 0;
+      left: 0;
+      font-size: 15px;
+      width: 30px !important;
+
+      &:hover {
+        color: #50ac00;
+        border-top: 1px solid #50ac00;
+        border-right: 1px solid #50ac00;
+      }
+    }
+
+    .forward-carousel-icon {
+      bottom: 54px;
+      color: #d9d9d9;
+      border-top: 1px solid #B1B9CD;
+      border-left: 1px solid #B1B9CD;
+      width: 25px;
+      height: 25px;
+      border-radius: 10px 0 0 0;
+      right: 0;
+      font-size: 15px;
+      width: 30px !important;
+
+      &:hover {
+        color: #50ac00;
+        border-top: 1px solid #50ac00;
+        border-right: 1px solid #50ac00;
+      }
+    }
+
+    &.portrait{
+      .uploader {
+        overflow: hidden;
+        min-height: 280px !important;
+
+        img.h-100 {
+          height: auto !important;
+          width: 180% !important;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+  }
+
+  .carousel-content {
+    padding: 7px 12px;
+    border: 1px solid #c0c0c0;
+
+    .image-link {
+      font-size: 14px;
+      color: black;
+      line-height: 18px;
+      flex: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .image-link-active {
+      font-size: 14px !important;
+      padding: 0.5rem 75px 0.5rem 0.5rem;
+      color: black;
+      border-radius: 5px !important;
+      border-width: 0 !important;
+      box-shadow: none !important;
+    }
+
+    i {
+      color: #B1B9CC;
+    }
+  }
+
+  .carousel-action-btn {
+    border: 1px solid #c0c0c0;
+    height: 45px;
+    font-size: 14px;
+
+    .action-icon {
+      right: 8px;
+      bottom: 11px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .carousel-add-btn {
+    font-size: 17px !important;
+    color: #b1b9cd !important;
+    text-align: center;
+    padding: 12px 22px;
+
+    &, &:hover {
+      border: 1px solid #c0c0c0;
+      border-radius: 0 0 18px 18px;
+      margin-top:-1px;
+      z-index: 1;
+    }
+  }
+
+  .delete-btn {
+    top: -25px;
+    right: -25px;
+    border-radius: 25px;
+    border: 1px solid #b1b9cd;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+      border-color: firebrick;
+
+      i {
+        color: firebrick;
+      }
+    }
+
+    i {
+      font-size: 22px;
+      color: #B1B9CC;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.delay-container {
+  width: 266px;
+  min-height: 115px;
+  border-radius: 18px;
+  margin-top: 26px;
+
+  .delay-header {
+    border: 1px solid #c0c0c0;
+    border-radius: 18px 18px 0 0;
+    padding: 8px 12px;
+    background-color: #F1F0F0;
+  }
+
+  .delay-content {
+    &:hover {
+      cursor: pointer;
+    }
+
+    button.btn.btn-secondary {
+      border: 1px solid #c0c0c0 !important;
+      border-top: none !important;
+    }
+  }
+
+  .delay-footer {
+    font-size: 17px !important;
+    color: #b1b9cd !important;
+    text-align: center;
+    padding: 12px;
+
+    &, &:hover {
+      border: 1px solid #c0c0c0;
+      border-top-width: 0;
+      border-radius: 0 0 18px 18px;
+    }
+
+    span {
+      color: #30323b;
+      font-size: 14px;
+    }
+  }
+
+  .delete-btn {
+    top: -25px;
+    right: -25px;
+    border-radius: 25px;
+    border: 1px solid #b1b9cd;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+      border-color: firebrick;
+      cursor: pointer;
+
+      i {
+        color: firebrick;
+      }
+    }
+
+    i {
+      font-size: 22px;
+      color: #B1B9CC;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.templates-page-container {
+  padding: 30px;
+  background-color: white;
+
+  .template-container {
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+
+    p {
+      font-size: 1.25rem;
+      color: #30323b;
+      line-height: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .template-list-container {
+      flex: 4 4 auto;
+      height: 100%;
+      justify-content: flex-start !important;
+
+      .table {
+        border: 1px solid #E6E7EB;
+        border-radius: 10px;
+        margin-bottom: 0 !important;
+        // height: calc(100% - 0px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100% - 51px);
+
+        .template-header {
+          min-height: 52px;
+          border-radius: 10px 10px 0 0;
+          background-color: #f5f6fa;
+          align-items: center;
+          margin: 0;
+
+          div {
+            font-size: 10px;
+            color: #30323b;
+            letter-spacing: 0.71px;
+            padding: 10px;
+            line-height: 12px;
+          }
+        }
+
+        .template-list {
+          // max-height: 290px;
+          // max-height: 480px;
+          overflow: auto;
+          height: 100%;
+        }
+
+        .template-row {
+          align-items: center;
+          margin: 0;
+          min-height: 36px;
+
+          i {
+            color: #B1B9CC;
+            font-size: 15px;
+            &:hover{
+              color: #274bf0;
+            }
+          }
+
+          & > div {
+            font-size: 12px;
+            color: #30323b;
+            padding: 10px;
+          }
+
+          & > div:not(:last-child) {
+            border-right: 1px solid #E6E7EB;
+          }
+        }
+
+        .template-row:not(:last-child) {
+          border-bottom: 1px solid #E6E7EB;
+        }
+      }
+    }
+
+    .template-import-container {
+      flex: 3 3 auto;
+      margin-left: 30px;
+      height: 100%;
+
+      .template-import-content {
+        border: 1px solid #E6E7EB;
+        border-radius: 10px;
+        flex: 1;
+        max-height: 260px;
+
+        .template-import-input {
+          border-radius: 8px;
+          border: 1px solid #E6E7EB;
+          padding: 10px;
+          min-height: 40px;
+          width: 70%;
+          margin-bottom: 10px;
+        }
+
+        .btn-submit {
+          min-height: 40px;
+          border-radius: 8px;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+

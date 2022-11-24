@@ -1,0 +1,109 @@
+.card-container {
+  // width: 266px;
+  width: 100%;
+  min-height: 255px;
+  border-radius: 18px;
+  margin-top: 26px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .upload-warning {
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .image-actions{
+    border-bottom:1px dashed #b1b9cd;
+    padding-bottom:1rem;
+    &:hover{
+      border-color:#242424;
+    }
+  }
+   
+  .card-content {
+    padding: 7px 12px;
+    border: 1px solid #ebebeb;
+
+    .image-link {
+      font-size: 14px;
+      color: black;
+      line-height: 18px;
+      flex: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .image-link-active {
+      font-size: 14px !important;
+      padding: 0.5rem 75px 0.5rem 0.5rem;
+      color: black;
+      border-radius: 5px !important;
+      border-width: 0 !important;
+      box-shadow: none !important;
+    }
+
+    i {
+      color: #B1B9CC;
+    }
+    &:hover{
+      border-color:#242424;
+    }
+  }
+
+  .card-action-btn {
+    border: 1px solid #ebebeb;
+    height: 45px;
+    font-size: 14px;
+
+    .action-icon {
+      right: 8px;
+      bottom: 11px;
+      width: 20px;
+      height: 20px;
+    }
+    &:hover{
+      border-color: #242424;
+    }
+  }
+
+  .card-add-btn {
+    font-size: 17px !important;
+    color: #b1b9cd !important;
+    text-align: center;
+    padding: 12px 22px;
+    border: 1px solid #ebebeb;
+    // border-top-width: 0;
+    border-radius: 0 0 18px 18px;
+
+    &:hover {
+      border: 1px solid #242424;
+      // border-top-width: 0;
+      color: #242424 !important;   
+    }
+  }
+
+  .delete-btn {
+    top: -25px;
+    right: -25px;
+    border-radius: 25px;
+    border: 1px solid #b1b9cd;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+      border-color: firebrick;
+
+      i {
+        color: firebrick;
+      }
+    }
+
+    i {
+      font-size: 22px;
+      color: #B1B9CC;
+    }
+  }
+}

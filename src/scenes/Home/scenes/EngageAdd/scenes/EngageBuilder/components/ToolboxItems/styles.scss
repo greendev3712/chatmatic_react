@@ -1,0 +1,49 @@
+.toolbox-items-container {
+  padding-top: 10px;
+  border-top: 1px dashed #b1b9cd;
+
+  .toolbox-item {
+    padding: 6px;
+    margin: 0.3rem 0.5rem;
+    width: calc(25% - 1rem);
+
+    &.hover {
+      box-shadow: 0 2px 20px 0 rgba(48,50,59,0.15);
+      border-radius: 10px;
+
+      span {
+        color: #274BF0;
+      }
+    }
+
+    img {
+      width: 54px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    span {
+      font-size: 10px;
+      color: #30323b;
+      margin-top: 5px;
+    }
+    &.disable{
+      opacity: 0.3;
+      &:hover{
+        cursor: not-allowed;
+      }
+      img{
+        &:hover{
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+.popover-container {
+  max-width: 338px !important;
+  border-radius: 10px;
+}

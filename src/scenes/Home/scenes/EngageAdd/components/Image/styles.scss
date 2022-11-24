@@ -1,0 +1,74 @@
+.image-container {
+  width: 266px;
+  min-height: 156px;
+  border-radius: 18px;
+  margin-top: 26px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .upload-warning {
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .image-actions{
+    border-bottom:1px solid #b1b9cd;
+    padding-bottom:1rem;
+   }
+
+  .image-action-btn {
+    border: 1px solid #c0c0c0;
+    height: 45px;
+    font-size: 14px;
+    margin-top: -1px;
+
+    .action-icon {
+      right: 8px;
+      bottom: 11px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .image-add-btn {
+    font-size: 17px !important;
+    color: #b1b9cd !important;
+    text-align: center;
+    padding: 12px 22px;
+    border-color: #c0c0c0;
+    // border-top-width: 0;
+    border-radius: 0 0 18px 18px;
+
+    &:hover {
+      border: 1px solid #242424;
+    }
+  }
+
+  .delete-btn {
+    top: -25px;
+    right: -25px;
+    border-radius: 25px;
+    border: 1px solid #b1b9cd;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+      border-color: firebrick;
+
+      i {
+        color: firebrick;
+      }
+    }
+
+    i {
+      font-size: 22px;
+      color: #B1B9CC;
+    }
+  }
+}
+
+.url-modal-container{
+   width:500px;
+   padding:20px;    
+}

@@ -1,0 +1,191 @@
+.integration-add-scene {
+    background-color: #f7f8fa;
+    overflow-y: auto;
+    .top-container {
+        flex: 1;
+
+        .integration-list-container {
+            border-radius: 10px;
+
+            .integration-list {
+                border-radius: 10px;
+                margin-right: 10px;
+                box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+                    0 1px 3px rgba(0, 0, 0, 0.08);
+
+                .integration-item {
+                    width: 60px;
+                    height: 60px;
+                    margin: 30px 30px 0;
+                    border: 1px solid #b1b9cc;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        .domain-whitelist-container {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+
+            .domain-whitelist-header {
+                background: #f5f6fa;
+                height: 50px;
+                font-size: 14px;
+                color: #30323b;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .domain-input-container {
+                padding: 30px 0;
+                margin: 0 30px;
+
+                .input-group-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-width: 86px;
+                    box-shadow: none;
+
+                    &:active,
+                    &:hover {
+                        background: white;
+                        border: 1px solid #274bf0;
+                        color: #274bf0;
+                    }
+                }
+            }
+
+            .domain-list {
+                margin: 0 30px;
+                padding: 30px 0;
+                border-top: 2px solid #e6e7eb;
+                max-height: 160px;
+
+                .domain-item {
+                    label {
+                        color: #b1b9cd;
+                        word-break: break-word;
+                    }
+
+                    button {
+                        padding: 0 10px;
+                        color: #b1b9cd;
+
+                        &:hover {
+                            color: #30323b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-container {
+        flex: 1;
+        margin-top: 10px;
+        padding: 20px 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+            0 1px 3px rgba(0, 0, 0, 0.08);
+
+        p {
+            font-size: 14px;
+            color: #30323b;
+            font-weight: bold;
+            margin-bottom: 13px;
+        }
+
+        .integration-procedure-container {
+            flex: 1;
+            padding: 10px 0;
+            overflow: auto;
+
+            button {
+                width: 140px;
+                min-height: 40px;
+                margin-top: 30px;
+            }
+
+            .shopify-form-container {
+                font-size: 14px;
+                margin-right: 57px;
+                margin-bottom: 30px;
+
+                & > span {
+                    color: #5f5f61;
+                }
+
+                label {
+                    color: #b1b9cd;
+                }
+            }
+
+            .youtube-form-container,
+            .infusionsoft-form-container {
+                margin-right: 30px;
+            }
+        }
+
+        .connect-status-container {
+            flex: 1;
+            border-left: 1px solid #e6e7eb;
+            padding: 10px 0 10px 30px;
+
+            .connect-status {
+                font-size: 14px;
+
+                .status-not-connected {
+                    color: #5f5f61;
+
+                    &.active {
+                        color: #f0277c;
+                    }
+                }
+
+                .status-border-container {
+                    padding: 40px 70px;
+
+                    .status-border {
+                        height: 2px;
+                        background-color: #e6e7eb;
+                    }
+
+                    span.position-absolute {
+                        top: 0;
+                        left: calc(50% - 30px);
+                        color: #b1b9cd;
+                    }
+                }
+
+                .status-connected {
+                    color: #5f5f61;
+
+                    &.active {
+                        color: #0084ff;
+                    }
+                }
+            }
+
+            .btn-remove {
+                width: 140px;
+                box-shadow: none;
+                background: white;
+                border: 1px solid #b1b9cc;
+                color: #30323b;
+                font-size: 12px;
+                height: 40px;
+            }
+
+            .btn-save {
+                width: 140px;
+                box-shadow: none;
+                color: white;
+                font-size: 12px;
+                height: 40px;
+                margin-left: 30px;
+            }
+        }
+    }
+}

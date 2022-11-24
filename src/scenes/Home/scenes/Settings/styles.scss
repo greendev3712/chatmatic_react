@@ -1,0 +1,31 @@
+.settings-scene {
+  min-height: calc(100vh - 171px);
+  // min-height: calc(100vh - 145px);
+  background-color: #fff;
+  border-radius: 10px;
+  padding-top: 30px;
+  box-shadow: 0 2px 20px 0 rgba(48, 50, 59, .15);
+
+  .tab-pane > div {
+    // height: calc(100vh - 232px);
+    height: calc(100vh - 145px);
+  }
+
+  nav {
+    border: 0;
+    font-size: 14px;
+    color: #30323b;
+    border-bottom: 1px solid #E6E7EB;
+
+    &.nav-tabs .nav-link.active {
+      border: 0;
+      background: transparent;
+      color: #274bf0;
+      border-bottom: 2px solid #274bf0;
+    }
+
+    &.nav-tabs .nav-link:hover, &.nav-tabs .nav-link:focus {
+      border: 0;
+    }
+  }
+}

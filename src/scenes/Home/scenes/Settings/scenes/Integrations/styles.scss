@@ -1,0 +1,54 @@
+.integrations-container {
+  background: #F7F8FA;
+  padding: 1.5rem 1.25rem 1.25rem;
+  box-shadow: 0 2px 20px 0 rgba(48, 50, 59, .15);
+
+  .integrations-list {
+    flex: 1;
+    overflow: auto;
+
+    .integration-item-container {
+      background: white;
+      padding: 16.5px 30px;
+      min-height: 93px;
+      margin: 0 0 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px 0 rgba(48, 50, 59, .15);
+
+      img {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        border: 1px solid #b1b9cd;
+        border-radius: 6px
+      }
+
+      h4 {
+        font-size: 30px;
+        color: #30323b;
+        line-height: 35px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      small {
+        font-size: 10px;
+        color: #B1B9CC;
+        letter-spacing: 1px;
+        line-height: 12px;
+      }
+
+      i {
+        font-size: 1.25rem;
+        color: #30323b;
+      }
+
+      .btn-remove {
+        color: #30323b;
+      }
+    }
+  }
+}
